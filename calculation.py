@@ -2,6 +2,10 @@ import datetime
 
 class Calculate:
     def find_palindroms(self, start_year,last_year):
+        '''
+        Create proper formating for work with dates
+        Iterate over the dates in selected years
+        '''
         start_date = datetime.datetime.strptime("01.01."+ str(start_year), "%d.%m.%Y")
         last_date = datetime.datetime.strptime("31.12."+str(last_year), "%d.%m.%Y")
         palindrome_dates =""
@@ -17,6 +21,9 @@ class Calculate:
         return palindrome_dates
 
     def is_palindrome(self,string):
+        '''
+        Check if the date is palindrom
+        '''
         reversed_string = string[::-1]
         if string == reversed_string:
             return True

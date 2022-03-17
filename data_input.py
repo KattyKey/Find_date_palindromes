@@ -1,6 +1,9 @@
 class DataInput:
 
     def select_years(self):
+        '''
+        Select the beginning and last years for search
+        '''
         while True:
             select_by_own = input("Default selected time period 1900-2040. Do you want to enter your own? (Y/N) ")
             if select_by_own.upper() == "Y" or select_by_own.upper() == "N":
@@ -18,6 +21,9 @@ class DataInput:
         return startYear,endYear
 
     def input_year(self, identify_year, startYear=0):
+        '''
+        Control user input of year value
+        '''
         while True:
             try:
                 year = int(input("Please enter " + identify_year + ": "))
