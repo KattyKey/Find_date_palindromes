@@ -1,4 +1,4 @@
-# Recruitment_Task
+# Find_date_palindromes
 For the date format: dd.mm.yy
 Find all date palindromes between 1900 and 2040.
 The result data should be saved to the "output.txt" file.
